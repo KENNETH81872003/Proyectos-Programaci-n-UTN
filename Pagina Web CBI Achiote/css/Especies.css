@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body{
+  background-color: rgb(107, 139, 167);
+}
+
+.navbar{
+  background-color:#af4548;
+}
+
+#navbarNav ul li a{
+  color: rgb(0, 0, 0);
+}
+
+#navbarNav ul li a:hover{
+  color: rgb(249, 249, 249);
+}
+
+
+.navbar-brand .logo {
+  height: 85px; /* Ajusta el tamaño de la imagen */
+ 
+}
+
+#infoContainer{
+  width: 90%;
+  margin: 0 auto;
+}
+
+#infoContainer{
+  margin-top: 30px;
+}
+
+
+
+/* Footer */
+
+
+
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+  padding: 0; /* Asegura que no haya padding */
+}
+
+.footer {
+  background-color: rgb(175, 69, 72);
+  padding: 70px 0;
+  margin-top: 40px;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 20px; /* Cambié a 20px para ajustar el espacio */
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px; /* Espaciado con el texto */
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul {
+  padding-left: 0; /* Eliminar padding */
+}
+
+.footer-col ul li {
+  margin-bottom: 10px; /* Mantiene espacio entre los elementos */
+  text-align: left; /* Alineación a la izquierda */
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #bbbbbb;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  #infoContainer p{
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+
+/* redes sociales */
+
+/* From Uiverse.io by Medisetti-Venkata-Saikiran */ 
+.social-login-icons {
+  display: flex;
+  align-items: center;
+}
+.social-login-icons svg {
+  width: 40px;
+}
+
+.social-icon-1,
+.social-icon-2,
+.social-icon-3,
+.social-icon-4 {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .social-icon-1 i{
+    color: rgba(175, 7, 7, 0.899);
+    font-size:50px;
+
+} */
+/* .social-icon-2 i{
+    color: skyblue;
+    font-size:50px;
+
+} */
+/* .social-icon-3 i{
+    color: rgb(58 58 227 / 87%);
+    font-size:50px;
+
+} */
+/* .social-login-icons{
+    margin: 30px 0px;
+} */
+
+.socialcontainer {
+  height: 50px;
+  overflow: hidden;
+  margin: 3%;
+  border-radius: 50%;
+}
+
+.social-icon-2 {
+  transition-duration: 0.4s;
+  background: linear-gradient(
+    72.44deg,
+    #ff7a00 11.92%,
+    #ff0169 51.56%,
+    #d300c5 85.69%
+  );
+}
+.socialcontainer:hover .social-icon-2 {
+  transform: translateY(-50px);
+}
+.social-icon-3 {
+  transition-duration: 0.4s;
+  background: #316ff6;
+}
+
+.socialcontainer:hover .social-icon-3 {
+  transform: translateY(-50px);
+}
+
+/* Animación del Scroll*/
+
+
+.footer-col ul li a:hover {
+  font-weight: bold; /* Cambia a negrita al hacer hover */
+}
+
+
+.card {
+  width: 190px;
+  height: 254px;
+  background: #07182E;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card h2 {
+  z-index: 1;
+  color: white;
+  font-size: 2em;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  ;
+  inset: 5px;
+  border-radius: 15px;
+}  
+/* .card:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+} */
+
+
+
+
+
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 1200px;
+  font-style: normal;
+  text-align: center;
+  margin: 5%;
+}
+
+
+  
+  /*
+  Boton de descargar
+  */
+/* From Uiverse.io by d3uceY */ 
+.download-btn {
+    height: 45px;
+    width: 150px;
+    cursor: pointer;
+    background: white;
+    border: none;
+    background: #af4548;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  .button-content {
+    transform: translateY(-45px);
+    transition: all 250ms ease-in-out;
+  }
+  
+  .svg-container,
+  .text-container {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-container .text {
+    font-size: 13px;
+    color: #fff;
+    font-weight: 600;
+    opacity: 1;
+    transition: opacity ease-in-out 250ms;
+  }
+  
+  .download-icon {
+    height: 25px;
+    width: 25px;
+    fill: #fff;
+    opacity: 0;
+    transition: opacity ease-in-out 250ms;
+  }
+  
+  /* hover state for the button */
+  .download-btn:hover .button-content {
+    transform: translateY(0px);
+  }
+  
+  .download-btn:hover .text {
+    opacity: 0;
+  }
+  
+  .download-btn:hover .download-icon {
+    opacity: 1;
+  }
+  
+  .download-btn:focus .download-icon {
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+
+  #infoContainer{
+    width: 80%;
+    background-color: rgb(202, 227, 248);
+    padding: 10px;
+    border-radius: 30px;
+  }
+
+
+  #infoContainer p{
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    width: 82%;
+  }
+  
+  #infoContainer a{
+    text-decoration: none;
+  }
+
+
+  #infoContainer button{
+    display: flow-root;
+    margin: 0 auto;
+    text-decoration: none;
+  }
+
+  
+  @-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+      transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+      transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+      transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+      transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+      transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+      transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+
+
+
+    
+  }
+
+  /* Responsive */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  #infoContainer{
+    width: 90%;
+  }
+
+  #infoContainer p{
+    width: 100%;
+  }
+
+  .copy{
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+  }
+
+}
+
+
+
+.copy{
+  text-align: center;
+  font-size: small;
+  color: black;
+
+}
+  /* hover state for the button */
+
+
+  
+  
+  /*iconos footer*/
+
+  /* telefono del footer */
+
+  .line-md--phone-call-loop {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath stroke-dasharray='64' stroke-dashoffset='64' d='M8 3c0.5 0 2.5 4.5 2.5 5c0 1 -1.5 2 -2 3c-0.5 1 0.5 2 1.5 3c0.39 0.39 2 2 3 1.5c1 -0.5 2 -2 3 -2c0.5 0 5 2 5 2.5c0 2 -1.5 3.5 -3 4c-1.5 0.5 -2.5 0.5 -4.5 0c-2 -0.5 -3.5 -1 -6 -3.5c-2.5 -2.5 -3 -4 -3.5 -6c-0.5 -2 -0.5 -3 0 -4.5c0.5 -1.5 2 -3 4 -3Z'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' dur='0.6s' values='64;0'/%3E%3CanimateTransform id='lineMdPhoneCallLoop0' fill='freeze' attributeName='transform' begin='0.6s;lineMdPhoneCallLoop0.begin+2.7s' dur='0.5s' type='rotate' values='0 12 12;15 12 12;0 12 12;-12 12 12;0 12 12;12 12 12;0 12 12;-15 12 12;0 12 12'/%3E%3C/path%3E%3Cpath stroke-dasharray='4' stroke-dashoffset='4' d='M15.76 8.28c-0.5 -0.51 -1.1 -0.93 -1.76 -1.24M15.76 8.28c0.49 0.49 0.9 1.08 1.2 1.72'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='lineMdPhoneCallLoop0.begin+0s' dur='2.7s' keyTimes='0;0.111;0.259;0.37;1' values='4;0;0;4;4'/%3E%3C/path%3E%3Cpath stroke-dasharray='6' stroke-dashoffset='6' d='M18.67 5.35c-1 -1 -2.26 -1.73 -3.67 -2.1M18.67 5.35c0.99 1 1.72 2.25 2.08 3.65'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='lineMdPhoneCallLoop0.begin+0.2s' dur='2.7s' keyTimes='0;0.074;0.185;0.333;0.444;1' values='6;6;0;0;6;6'/%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  /* correo del footer*/
+
+  .line-md--email {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath stroke-dasharray='64' stroke-dashoffset='64' d='M4 5h16c0.55 0 1 0.45 1 1v12c0 0.55 -0.45 1 -1 1h-16c-0.55 0 -1 -0.45 -1 -1v-12c0 -0.55 0.45 -1 1 -1Z'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' dur='0.6s' values='64;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='24' stroke-dashoffset='24' d='M3 6.5l9 5.5l9 -5.5'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='0.6s' dur='0.2s' values='24;0'/%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  
+
+  .contenedortelefono{
+    display: flex;
+    align-items: center;
+ 
+  }
+
+
+  /*
+
+*/
+
+/* Estilos generales para la imagen y su contenedor */
+.footer-col-logo {
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+ /* Espacio alrededor de la imagen */
+}
+
+.logo_footer {
+  object-fit: contain;
+  max-width: 100%; /* Evita que la imagen exceda el tamaño del contenedor */
+}
+
+/* Solo para dispositivos móviles */
+@media (max-width: 768px) {
+  .footer-col-logo {
+    height: auto;
+    margin: 0 auto;
+    width: 70%; /* Ajusta el tamaño según el contenido */
+  }
+
+  .logo_footer {
+    width: 800px; /* Ajusta el tamaño de la imagen solo en móviles */
+    height: auto;
+  }
+}
+
+
+/**/
